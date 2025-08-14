@@ -1,4 +1,4 @@
-]
+
 # CNDO/2 Analytic Gradient Implementation
 
 ## Overview
@@ -34,4 +34,23 @@ This implementation achieves **O(N²)** scaling for large molecules by exploitin
 
 ## Mathematical Background
 The gradient of the CNDO/2 SCF energy with respect to nuclear coordinates is given by:
+
+
+
+Where:
+- **x<sub>μν</sub>**: coefficient matrix from energy terms multiplying overlap integrals.
+- **y<sub>AB</sub>**: coefficient matrix from energy terms multiplying γ<sub>AB</sub> integrals.
+- **s<sup>RA</sup><sub>μν</sub>**: derivative of overlap integrals with respect to nuclear coordinate R<sub>A</sub>.
+- **γ<sup>RA</sup><sub>AB</sub>**: derivative of γ<sub>AB</sub> Coulomb-like integrals.
+- **V<sup>RA</sup><sub>nuc</sub>**: derivative of nuclear repulsion.
+
+---
+
+## Installation
+### Requirements
+- C++17 or newer
+- [Armadillo](http://arma.sourceforge.net/) linear algebra library
+- CMake ≥ 3.15
+
+
 
