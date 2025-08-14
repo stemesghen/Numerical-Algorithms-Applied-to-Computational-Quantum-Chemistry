@@ -1,0 +1,37 @@
+calculating an analytical gradient of the ...
+
+
+
+E^Rs CNDO/2 is the derivative with the 
+
+
+Derive an anlaytical expression for what thaose are for Xmv and y AB 
+
+Start with expression for energy adn take the derivative of that with respoect to the position of an atom
+once you do that you sould get a respoecttake te  derivative of the 
+terms in the 
+
+
+Derive X and Y on pen and paper.. 
+
+workout what those terms are and then  once oyu do that you can do the rest of the assignment 
+implementing the code to calcuate the analyricat gradiend
+
+
+
+The answers are given as a flattened matrices
+
+
+when you do the derivative of a matrix with respect to three dimensions, a matrix already has two dimensions. When you take the derivative, you've got this now this extra dimension with X, Y, and Z
+
+There are some matrices where the Gamma matrix is a number of atoms times the number of atoms matrix. The derivative of the Gamma matrix is given as a three by number of atoms squared object. You just flatten the elements in the matrix so that they're all in a row. It's just, unfortunately, easier to do that than it is to work with three D tensors in C plus plus ring through tensors. 
+
+
+6 N2 atoms gives error bounds 
+ This again, also gives some advice about error checking, it gives upper bounds on number of non zeros. If you're doing these calculations and you're violating, you're getting answers that violate the expected descriptions, then you're definitely doing it incorrectly.
+
+
+Just suggesting that if you were to create a test case where you shift everything, there should be no change in the forces. If that's not the case, then you have made a mistake somewhere. But it would be pretty hard to get the correct answer and also fail this criteria.
+
+
+
